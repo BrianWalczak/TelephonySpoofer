@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Cellular Spoofer"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Developed by Brian Walczak for test purposes"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="18dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telephony Features" />
+        <CheckBox
+            android:id="@+id/cb_feature_telephony"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FEATURE_TELEPHONY" />
+        <CheckBox
+            android:id="@+id/cb_feature_telephony_gsm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FEATURE_TELEPHONY_GSM" />
+        <CheckBox
+            android:id="@+id/cb_feature_telephony_cdma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FEATURE_TELEPHONY_CDMA" />
+
+        <Switch
+            android:id="@+id/switch_euicc_enabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="eSIM Supported " />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TelephonyManager Properties"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:layout_marginTop="24dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device Capabilities"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Type" />
+        <Spinner
+            android:id="@+id/sp_phone_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/phone_type_options"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Count" />
+        <EditText
+            android:id="@+id/et_phone_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Count"
+            android:inputType="number"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capabilities" />
+        <CheckBox
+            android:id="@+id/cb_voice_capable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voice Capable" />
+        <CheckBox
+            android:id="@+id/cb_sms_capable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS Capable" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Network Information"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Network Type" />
+        <Spinner
+            android:id="@+id/sp_network_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/network_type_options"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Network Type" />
+        <Spinner
+            android:id="@+id/sp_data_network_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/network_type_options"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Network Operator (MCCMNC)" />
+        <EditText
+            android:id="@+id/et_network_operator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Network Operator Name" />
+        <EditText
+            android:id="@+id/et_network_operator_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Network Country ISO" />
+        <EditText
+            android:id="@+id/et_network_country_iso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <CheckBox
+            android:id="@+id/cb_network_roaming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Network Roaming" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIM Information"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIM State" />
+        <Spinner
+            android:id="@+id/sp_sim_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/sim_state_options"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ICC Card Present" />
+        <CheckBox
+            android:id="@+id/cb_has_icc_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Has ICC Card" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIM Operator (MCCMNC)" />
+        <EditText
+            android:id="@+id/et_sim_operator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIM Operator Name" />
+        <EditText
+            android:id="@+id/et_sim_operator_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIM Country ISO" />
+        <EditText
+            android:id="@+id/et_sim_country_iso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp">
+
+            <Button
+                android:id="@+id/btn_apply"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Apply Spoof" />
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:backgroundTint="#F44336"
+                android:textColor="#FFFFFF"
+                android:text="Reset Defaults" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

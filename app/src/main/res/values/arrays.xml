@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="phone_type_options">
+        <item>NONE</item>
+        <item>GSM</item>
+        <item>CDMA</item>
+        <item>SIP</item>
+    </string-array>
+
+    <string-array name="network_type_options">
+        <item>UNKNOWN</item>
+        <item>GPRS</item>
+        <item>EDGE</item>
+        <item>UMTS</item>
+        <item>CDMA</item>
+        <item>EVDO_0</item>
+        <item>EVDO_A</item>
+        <item>1xRTT</item>
+        <item>HSDPA</item>
+        <item>HSUPA</item>
+        <item>HSPA</item>
+        <item>IDEN</item>
+        <item>EVDO_B</item>
+        <item>LTE</item>
+        <item>EHRPD</item>
+        <item>HSPAP</item>
+        <item>NR</item>
+    </string-array>
+
+    <string-array name="sim_state_options">
+        <item>UNKNOWN</item>
+        <item>ABSENT</item>
+        <item>PIN_REQUIRED</item>
+        <item>PUK_REQUIRED</item>
+        <item>NETWORK_LOCKED</item>
+        <item>READY</item>
+        <item>NOT_READY</item>
+        <item>PERM_DISABLED</item>
+        <item>CARD_IO_ERROR</item>
+        <item>CARD_RESTRICTED</item>
+    </string-array>
+</resources>
