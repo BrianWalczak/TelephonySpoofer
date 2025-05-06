@@ -11,7 +11,7 @@
 - Easy installation with LSPosed (must have a rooted device w/ Xpsoed).
 
 ## Usage
-If you'd like to compile this project for yourself, download the latest release `.zip` file and launch it in Android Studio for easy building. Otherwise, you can simply install it using the pre-compiled APK in the latest release [here](https://github.com/BrianWalczak/TelephonySpoofer/releases/tag/v1.0.0)
+If you'd like to compile this project for yourself, download the latest release `.zip` file and launch it in Android Studio for easy building. Otherwise, you can simply install it using the pre-compiled APK in the latest release [here](https://github.com/BrianWalczak/TelephonySpoofer/releases/).
 
 ## Contributions
 If you'd like to contribute to this project, please create a pull request [here](https://github.com/BrianWalczak/TelephonySpoofer/pulls). You can submit your feedback or any bugs that you find, on our <a href='https://github.com/BrianWalczak/TelephonySpoofer/issues'>issues page</a>. Contributions are highly appreciated and will help us keep this project up-to-date!
